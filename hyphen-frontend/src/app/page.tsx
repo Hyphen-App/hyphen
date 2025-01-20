@@ -1,10 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Inter } from "next/font/google";
+
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={`${styles.main} ${inter.className}`}>
         <Image
           className={styles.logo}
           src="/next.svg"
