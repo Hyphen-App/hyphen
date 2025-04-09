@@ -47,16 +47,52 @@ const sampleProjects = [
     title: 'BLUE GRADIENT',
     imageUrl: 'https://images.unsplash.com/photo-1557683316-973673baf926',
   },
+  {
+    id: '7',
+    title: 'GREEN HORIZONS',
+    imageUrl: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d',
+    description: 'Landscape studies in emerald tones',
+  },
+  {
+    id: '8',
+    title: 'SILVER MOMENTS',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+  },
 ];
 
 export const Default: Story = {
   args: {
-    projects: sampleProjects,
+    projects: sampleProjects.slice(0, 6), // Original 6-project layout
   },
 };
 
 export const FewProjects: Story = {
   args: {
-    projects: sampleProjects.slice(0, 3),
+    projects: sampleProjects.slice(0, 3), // Tests odd number handling
+  },
+};
+
+export const SingleProject: Story = {
+  args: {
+    projects: sampleProjects.slice(0, 1), // Tests single project case
+  },
+};
+
+export const ManyProjects: Story = {
+  args: {
+    projects: sampleProjects, // Tests all 8 projects
+  },
+};
+
+export const WithCustomClass: Story = {
+  args: {
+    projects: sampleProjects.slice(0, 4),
+    className: 'p-8', // Tests custom className prop
+  },
+};
+
+export const MinimalProjects: Story = {
+  args: {
+    projects: sampleProjects.slice(0, 2), // Tests basic pair
   },
 };
