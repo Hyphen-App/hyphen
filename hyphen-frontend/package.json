@@ -19,7 +19,7 @@
     "tailwindcss": "^4.0.17"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.4",
+    "@chromatic-com/storybook": "^4.0.0",
     "@eslint/eslintrc": "^3",
     "@storybook/addon-essentials": "^8.6.0-alpha.0",
     "@storybook/addon-interactions": "^8.6.0-alpha.0",
